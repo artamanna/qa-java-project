@@ -11,7 +11,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-    public class RightPriceTest {
+    public class PriceTest {
         @Mock private Bun bun;
         private Burger burger;
         @Mock
@@ -20,7 +20,7 @@ import static org.junit.Assert.assertEquals;
         private final float ingredientPrice;
         private final float totalPrice;
 
-        public RightPriceTest(float bunPrice, float ingredientPrice, float totalPrice) {
+        public PriceTest(float bunPrice, float ingredientPrice, float totalPrice) {
             this.bunPrice = bunPrice;
             this.ingredientPrice = ingredientPrice;
             this.totalPrice = totalPrice;
